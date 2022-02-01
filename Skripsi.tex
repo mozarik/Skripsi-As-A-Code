@@ -7,7 +7,9 @@
 \usepackage{enumitem}
 \usepackage{array}
 % \usepackage{graphicsx}
+\usepackage{microtype}
 \usepackage{adjustbox}
+\usepackage[numbers]{natbib}
 
 % Daftar pemenggalan suku kata dan istilah dalam LaTeX
 \include{hype.indonesia}
@@ -88,15 +90,17 @@
 \include{bab1}
 \include{bab2}
 \include{bab3}
-\include{bab4}
-\include{bab5}
+% \include{bab4}
+% \include{bab5}
 
 % Merubah Nama Bibliografi ke Daftar Pustaka
 \renewcommand{\bibname}{DAFTAR PUSTAKA}
 \phantomsection
 \addcontentsline{toc}{chapter}{DAFTAR PUSTAKA}
 % Daftar Pustaka
-\include{pustaka}
+\bibliographystyle{IEEEtranN}
+\bibliography{export}
+% \include{pustaka}
 
 %
 % Lampiran 
