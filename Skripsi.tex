@@ -5,6 +5,9 @@
 % Load konfigurasi LaTeX untuk tipe laporan thesis
 \usepackage{unpam}
 \usepackage{enumitem}
+\usepackage{array}
+% \usepackage{graphicsx}
+\usepackage{adjustbox}
 
 % Daftar pemenggalan suku kata dan istilah dalam LaTeX
 \include{hype.indonesia}
@@ -24,47 +27,47 @@
 \pagenumbering{roman}
 
 % Judul Laporan
-\include{halaman_judul}
+% \include{halaman_judul}
 
 % Lembar Pernyataan
-\phantomsection \addcontentsline{toc}{chapter}{LEMBAR PERNYATAAN}
-\include{pernyataan}
+%\phantomsection \addcontentsline{toc}{chapter}{LEMBAR PERNYATAAN}
+%\include{pernyataan}
 
 % Lembar Persetujuan
 \phantomsection \addcontentsline{toc}{chapter}{LEMBAR PERSETUJUAN}
 \include{persetujuan}
 
 % Lembar Pengesahan
-\phantomsection \addcontentsline{toc}{chapter}{LEMBAR PENGESAHAN}
-\include{pengesahan}
+%\phantomsection \addcontentsline{toc}{chapter}{LEMBAR PENGESAHAN}
+%\include{pengesahan}
 
 % Lembar Abstract
-\phantomsection \addcontentsline{toc}{chapter}{ABSTRACT}
-\include{abstract}
+% \phantomsection \addcontentsline{toc}{chapter}{ABSTRACT}
+% \include{abstract}
 
 % Lembar Abstrak
-\phantomsection \addcontentsline{toc}{chapter}{ABSTRAK}
-\include{abstrak}
+% \phantomsection \addcontentsline{toc}{chapter}{ABSTRAK}
+% \include{abstrak}
 
 % Kata Pengantar
-\phantomsection \addcontentsline{toc}{chapter}{KATA PENGANTAR}
-\include{kata_pengantar}
+% \phantomsection \addcontentsline{toc}{chapter}{KATA PENGANTAR}
+% \include{kata_pengantar}
 
-\vspace*{-2.5cm}
-\tableofcontents
-\phantomsection
-\addcontentsline{toc}{chapter}{DAFTAR ISI}
-\clearpage
-\vspace*{-2.5cm}
-\listoftables
-\phantomsection
-\addcontentsline{toc}{chapter}{DAFTAR TABEL}
-\clearpage
-\vspace*{-2.5cm}
-\listoffigures
-\phantomsection
-\addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
-\clearpage
+% \vspace*{-2.5cm}
+% \tableofcontents
+% \phantomsection
+% \addcontentsline{toc}{chapter}{DAFTAR ISI}
+% \clearpage
+% \vspace*{-2.5cm}
+% \listoftables
+% \phantomsection
+% \addcontentsline{toc}{chapter}{DAFTAR TABEL}
+% \clearpage
+% \vspace*{-2.5cm}
+% \listoffigures
+% \phantomsection
+% \addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
+% \clearpage
 
 % Gunakan penomeran Arab (1, 2, 3, ...) setelah bagian ini.
 \pagenumbering{arabic}
@@ -73,12 +76,12 @@
 % Atur header dan footer dalam dokumen.
 % 
 \renewcommand{\headrulewidth}{0.0pt}
-	\fancyhf{} 
-	\fancyhead[L]{} 
-	\fancyhead[C]{} 
-	\fancyhead[R]{\thepage} 
-	\renewcommand{\headrulewidth}{0.0pt}
-	\renewcommand{\footrulewidth}{0.0pt} 
+\fancyhf{}
+\fancyhead[L]{}
+\fancyhead[C]{}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
 \pagestyle{fancy}
 
 \onehalfspacing
