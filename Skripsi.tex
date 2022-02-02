@@ -6,10 +6,11 @@
 \usepackage{unpam}
 \usepackage{enumitem}
 \usepackage{array}
-% \usepackage{graphicsx}
+\usepackage{graphics}
 \usepackage{microtype}
 \usepackage{adjustbox}
 \usepackage[numbers]{natbib}
+
 
 % Daftar pemenggalan suku kata dan istilah dalam LaTeX
 \include{hype.indonesia}
@@ -81,15 +82,16 @@
 \fancyhf{}
 \fancyhead[L]{}
 \fancyhead[C]{}
-\fancyhead[R]{\thepage}
+% \fancyhead[R]{\thepage}
+\fancyfoot[CE,CO]{\thepage}
 \renewcommand{\headrulewidth}{0.0pt}
 \renewcommand{\footrulewidth}{0.0pt}
 \pagestyle{fancy}
 
 \onehalfspacing
 \include{bab1}
-\include{bab2}
-\include{bab3}
+\include{bab2-proposal}
+\include{kesimpulan-proposal}
 % \include{bab4}
 % \include{bab5}
 
@@ -111,14 +113,14 @@
 \pagenumbering{arabic}
 
 \onehalfspacing
-\begin{appendix}
-	\include{markLampiran}
-\end{appendix}
+% \begin{appendix}
+% \include{markLampiran}
+% \end{appendix}
 
 \pagenumbering{arabic}% 
 \setcounter{page}{\number\value{originalpagenumber}}
 \clearpage
-\phantomsection \addcontentsline{toc}{chapter}{LAMPIRAN}
-\include{lampiran}
+% \phantomsection \addcontentsline{toc}{chapter}{LAMPIRAN}
+% \include{lampiran}
 
 \end{document}
