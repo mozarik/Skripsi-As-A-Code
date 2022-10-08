@@ -3,7 +3,7 @@
 \documentclass[12pt, a4paper, onecolumn, oneside, final]{report}
 
 % Load konfigurasi LaTeX untuk tipe laporan thesis
-\usepackage{unpam}
+\usepackage{src/unpam}
 \usepackage{enumitem}
 \usepackage{array}
 \usepackage{graphics}
@@ -13,7 +13,7 @@
 
 
 % Daftar pemenggalan suku kata dan istilah dalam LaTeX
-\include{hype.indonesia}
+\include{src/hype.indonesia}
 
 % Variabel baru untuk menyimpan nomor halaman
 \newcounter{originalpagenumber}%
@@ -22,7 +22,7 @@
 \begin{document}
 
 % Sampul Laporan
-\include{sampul}
+\include{src/sampul}
 
 % Daftar isi, gambar, dan tabel
 % Gunakan penomeran Romawi (i, ii, iii, ...) setelah bagian ini.
@@ -38,7 +38,7 @@
 
 % Lembar Persetujuan
 \phantomsection \addcontentsline{toc}{chapter}{LEMBAR PERSETUJUAN}
-\include{persetujuan}
+\include{src/persetujuan}
 
 % Lembar Pengesahan
 %\phantomsection \addcontentsline{toc}{chapter}{LEMBAR PENGESAHAN}
@@ -89,9 +89,9 @@
 \pagestyle{fancy}
 
 \onehalfspacing
-\include{bab1}
-\include{bab2-proposal}
-\include{kesimpulan-proposal}
+\include{src/bab1}
+\include{src/bab2-proposal}
+\include{src/kesimpulan-proposal}
 % \include{bab4}
 % \include{bab5}
 
